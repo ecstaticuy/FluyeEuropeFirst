@@ -16,11 +16,13 @@ ESPAÑOL:
 - Sección de Socios de Marca: imagen a la izquierda, texto y botón CTA a la derecha, totalmente responsivo, el CTA lleva a un formulario.
 - Las secciones Impact, Nosotros y Features son independientes, de ancho completo, fondo blanco y sin gris entre secciones.
 */
-
 :root {
+  html {
+    font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
+  }
   --primary: #000000;
   --secondary: #000000;
-  --text: #111111;
+  --text: #000000; /* English: black text, Spanish: texto negro */
   --background: #fff; /* English: pure white background, Spanish: fondo blanco puro */
   --navbar-bg: #fff;
   --navbar-shadow: 0 4px 24px rgba(22,163,74,0.10);
@@ -28,16 +30,17 @@ ESPAÑOL:
   --navbar-radius: 2rem;
   --navbar-link-hover-bg: #f0fdf4;
   --navbar-link-active-bg: #dcfce7;
-  --section-gradient: linear-gradient(90deg, #1e90ff 60%, #6dd5ed 100%);
-  --section-gradient-overlay: linear-gradient(90deg, rgba(30,144,255,0.92) 60%, rgba(109,213,237,0.92) 100%);
+  --section-gradient: linear-gradient(90deg, #ffffff 60%, #ffffff 100%);
   --section-radius: 1.2rem;
   --card-bg: #fff;
   --card-shadow: 0 2px 16px rgba(30,144,255,0.08);
   --card-hover-shadow: 0 6px 24px rgba(30,144,255,0.16);
-  --card-radius: 1.1rem
+  --card-radius: 1.1rem;
   --card-padding: 2rem 1.5rem;
   --partners-img-bg: #f0f8ff;
   --section-gap: 2.5rem;
+  --cta-text: #fff; /* English: white text for cta buttons, Spanish: texto blanco para botones cta */
+  --cta-gradient: linear-gradient(90deg, rgba(30,144,255,0.92) 60%, rgba(109,213,237,0.92) 100%);
 }
 
 /* English: Make body background pure white and full width */
@@ -227,14 +230,14 @@ header h1 {
   font-weight: 700;
   margin-bottom: 1rem;
   letter-spacing: -1px;
-  color: #fff;
+  color: #000000;
 }
 
 header p {
   font-size: 1.3rem;
   margin-bottom: 2.5rem;
   max-width: 500px;
-  color: #f0f8ff;
+  color: #000000;
 }
 
 .button, button {
@@ -444,7 +447,7 @@ section {
 
 /* CTA Button below carousel */
 .cta-btn {
-  background: #1e90ff;
+  background: linear-gradient(90deg, #222 60%, #1e90ff 100%);
   color: #fff;
   font-weight: 700;
   border-radius: 2rem;
@@ -703,7 +706,7 @@ section {
 }
 
 #cta button {
-  background: #fff;
+  background: linear-gradient(90deg, #222 60%, #1e90ff 100%);
   color: #1e90ff;
   font-weight: 700;
   border-radius: 2rem;
