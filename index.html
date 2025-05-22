@@ -15,8 +15,10 @@
         <a href="#productos" class="fluye-navbar-link">Productos</a>
         <a href="#branded-partners" class="fluye-navbar-link">Branded Partners</a>
       </div>
-      <div class="fluye-navbar-logo" style="font-weight: bold; font-size: 1.3rem; color: var(--primary); letter-spacing: 1px;">
-        Fluye
+      <div class="fluye-navbar-logo">
+        <a href="#">
+          <img src="img/logo.png" alt="Fluye Logo" style="height: 40px; display: block; margin: 0 auto;" />
+        </a>
       </div>
       <div class="fluye-navbar-section right">
         <a href="#impacto" class="fluye-navbar-link">Impacto</a>
@@ -24,25 +26,48 @@
       </div>
     </div>
   </nav>
+  <!-- 
+    HERO SECTION IMAGE INSTRUCTIONS:
+
+    To add an image for the Hero Section banner, you should place your image file (for example, "hero-banner.jpg" or "hero-banner.png") inside the "img" folder of your project.
+
+    Then, add an <img> tag inside the <header> element, ideally above or below the main heading (<h1>). 
+    Example:
+
+    <header>
+      <img src="img/hero-banner.jpg" alt="Hero Banner" style="width:100%; max-width:1200px; border-radius:1.2rem; margin:0 auto; display:block;" />
+      <h1>Bienvenido a Fluye Europe</h1>
+      <p>Nuestra misión es ayudar a las empresas a reducir su huella de carbono.</p>
+      <a href="#cta" class="button">Contactanos</a>
+    </header>
+
+    Make sure to replace "hero-banner.jpg" with the actual filename of your image.
+
+    The image file should be located at: 
+      /img/hero-banner.jpg
+    (relative to your index.html file)
+
+    If you want the image to appear as a background instead, you can use CSS on the <header> element.
+  -->
   <header>
-    <h1>Bienvenido a Fluye Europe</h1>
-    <p>Nuestra misión es ayudar a las empresas a reducir su huella de carbono.</p>
+    <!-- Example hero image, remove or replace the src as needed -->
+    <!-- Place your hero image in the "img" folder and update the src below -->
+    <img src="img/banner1.jpg" alt="Hero Banner" style="width:100%; max-width:1200px; border-radius:1.2rem; margin:0 auto 1.5rem auto; display:block;" />
+    <p>Transformamos hábitos. Reducimos la huella. <br> <strong> Fluye </strong> con propósito.</p>
     <a href="#cta" class="button">Contactanos</a>
   </header>
 
   <!-- Productos Section -->
   <section id="productos">
-    <h2>Productos / Products</h2>
+    <h2>Productos</h2>
     <p>
       <!-- English: Discover our innovative products designed to help companies reduce their carbon footprint. -->
       <!-- Español: Descubre nuestros productos innovadores diseñados para ayudar a las empresas a reducir su huella de carbono. -->
       Descubre nuestras botellas inteligentes y soluciones sostenibles para empresas y consumidores. 
-      <br>
-      Discover our smart bottles and sustainable solutions for companies and consumers.
-    </p>
+      <br>    </p>
     <div class="productos-container">
       <!-- Fluye Ceramic Pro 600ml -->
-      <div class="model-card">
+      <div class="model-card" style="background: #fff;">
         <!-- 
           English: 
           If your image is not being picked up, make sure the file "ceramic-pro-600ml.png" is in the correct folder. 
@@ -51,41 +76,47 @@
           Si tu imagen no se muestra, asegúrate de que el archivo "ceramic-pro-600ml.png" esté en la carpeta correcta.
           Si tus otras imágenes están en la carpeta "img", mueve "ceramic-pro-600ml.png" a la carpeta "img" y actualiza el src abajo.
         -->
-        <img src="img/ceramic-pro-600ml.png" alt="Fluye Ceramic Pro 600ml" class="model-card-img" />
+        <div style="background: #fff; border-radius: 1rem; padding: 1rem; display: flex; align-items: center; justify-content: center;">
+          <img src="img/ceramic-pro-600ml2.jpg" alt="Fluye Ceramic Pro 600ml" class="model-card-img" style="background: #fff; border: none; box-shadow: none; transform: scale(1);" />
+        </div>
         <div class="model-card-name">
           Fluye Ceramic Pro 600ml
         </div>
         <p style="text-align:center;">
           <!-- Español: Botella cerámica premium, doble pared, mantiene la temperatura y es reutilizable. -->
           <!-- English: Premium ceramic bottle, double wall, keeps temperature and is reusable. -->
-          Botella cerámica premium, doble pared, mantiene la temperatura y es reutilizable.<br>
-          Premium ceramic bottle, double wall, keeps temperature and is reusable.
+          Elegancia y sabor intacto. Temperatura perfecta, sin alterar el gusto.<br>
+          
         </p>
       </div>
       <!-- Fluye Sport 700ml -->
       <div class="model-card">
-        <img src="img/sport-700ml.png" alt="Fluye Sport 700ml" class="model-card-img" />
+        <div style="background: #fff; border-radius: 1rem; padding: 1rem; display: flex; align-items: center; justify-content: center;">
+          <img src="img/sport-700ml.png" alt="Fluye Sport 700ml" class="model-card-img" style="background: #fff; border: none; box-shadow: none; transform: scale(1);" />
+        </div>
         <div class="model-card-name">
           Fluye Sport 700ml
         </div>
         <p style="text-align:center;">
           <!-- Español: Botella deportiva ligera, ideal para actividades físicas y uso diario. -->
           <!-- English: Lightweight sport bottle, ideal for physical activities and daily use. -->
-          Botella deportiva ligera, ideal para actividades físicas y uso diario.<br>
-          Lightweight sport bottle, ideal for physical activities and daily use.
+          Ligera, resistente y lista para moverse contigo. Perfecta para entrenar.<br>
+        
         </p>
       </div>
       <!-- Fluye Sport 523ml -->
       <div class="model-card">
-        <img src="img/sport-523ml.png" alt="Fluye Sport 523ml" class="model-card-img" />
+        <div style="background: #fff; border-radius: 1rem; padding: 3rem 1rem 1rem 1rem; display: flex; align-items: center; justify-content: center;">
+          <img src="img/sport-523ml.png" alt="Fluye Sport 523ml" class="model-card-img" style="background: #fff; border: none; box-shadow: none; transform: scale(1.5);" />
+        </div>
         <div class="model-card-name">
           Fluye Sport 523ml
         </div>
         <p style="text-align:center;">
           <!-- Español: Botella compacta, fácil de transportar, perfecta para empresas y regalos corporativos. -->
           <!-- English: Compact bottle, easy to carry, perfect for companies and corporate gifts. -->
-          Botella compacta, fácil de transportar, perfecta para empresas y regalos corporativos.<br>
-          Compact bottle, easy to carry, perfect for companies and corporate gifts.
+          Botella compacta y práctica. Ideal para el día a día .<br>
+         
         </p>
       </div>
     </div>
@@ -98,21 +129,20 @@
       <button class="carousel-btn prev" aria-label="Anterior / Previous">&#10094;</button>
       <div class="carousel-track">
         <!-- Example partner logos, replace src with actual brand partner images -->
-        <img src="img/partner1.png" alt="Brand Partner 1" class="carousel-img" />
-        <img src="img/partner2.png" alt="Brand Partner 2" class="carousel-img" />
-        <img src="img/partner3.png" alt="Brand Partner 3" class="carousel-img" />
-        <img src="img/partner4.png" alt="Brand Partner 4" class="carousel-img" />
-        <img src="img/partner5.png" alt="Brand Partner 5" class="carousel-img" />
+        <img src="img/partner1.png" alt="Brand Partner 1" class="carousel-img" style="background: #fff;" />
+        <img src="img/partner2.png" alt="Brand Partner 2" class="carousel-img" style="background: #fff;" />
+        <img src="img/partner3.png" alt="Brand Partner 3" class="carousel-img" style="background: #fff;" />
+        <img src="img/partner4.png" alt="Brand Partner 4" class="carousel-img" style="background: #fff;" />
+        <img src="img/partner5.png" alt="Brand Partner 5" class="carousel-img" style="background: #fff;" />
+        <img src="img/partner2.png" alt="Brand Partner 5" class="carousel-img" style="background: #fff;" />
+        <img src="img/partner1.png" alt="Brand Partner 5" class="carousel-img" style="background: #fff;" />
       </div>
       <button class="carousel-btn next" aria-label="Siguiente / Next">&#10095;</button>
     </div>
     <div style="text-align:center; margin-top: 1.5rem;">
-      <button class="cta-btn">
-        <!-- Español: ¡Colabora con nosotros! -->
-        <!-- English: Partner with us! -->
-        Unete a Branded Partners
+        <a href="#cta" class="button">Unete a Branded Partners</a>
       </button>
-    </div>
+    </div> <br>
   </section>
 
   <!-- Impacto Section (Full Width) -->
@@ -120,42 +150,59 @@
     <div style="max-width:1200px; margin:0 auto; padding:0 1.5rem;">
       <h2>Impacto</h2>
       <h3 style="margin-top:1rem;">
-        Nuestro impacto como empresa y hacia la sociedad y el medio ambiente<br>
+        Buscamos inspirar a más personas y empresa a elegir hábitos sostenibles, sin perder el estilo.<br>
         <span style="font-weight:normal; font-size:1rem;">
-          Our impact as a company and to social and environmental causes
+          Fluye es un símbolo de decisiones conscientes, de tu forma de vivir. Porque no se trata de ser perfectos, sino de empezar por algo. De dar el primer paso
         </span>
       </h3>
       <div style="display: flex; flex-direction: column; gap: 2rem; margin-top:2rem;">
         <!-- Los Sin Agua -->
         <div style="display: flex; align-items: flex-start; gap: 1.5rem;">
-          <img src="img/los-sin-agua-logo.png" alt="Los Sin Agua" style="width:90px; height:auto; border-radius:0.7rem; box-shadow:0 2px 8px rgba(30,144,255,0.10);" />
+          <img src="img/los-sin-agua.jpg" alt="Los Sin Agua" style="width:250px; height:auto; border-radius:0.7rem; box-shadow:0 2px 8px rgba(30,144,255,0.10);" />
           <div>
             <strong>Los Sin Agua</strong><br>
             <span>
               <!-- Español -->
-              Organización dedicada a llevar acceso a agua potable a comunidades vulnerables en Perú.<br>
+              Es una ONG que instala atrapanieblas: mallas gigantes que capturan la neblina y la convierten en agua potable. 
+              Abel Cruz, un inventor nato que ha demostrado que con ingenio y corazón se puede transformar una comunidad entera. 
+              Su visión es clara: hacer mucho con poco. Y eso resuena con nosotros.<br><br>
+               <strong> Impacto </strong> <br> 
+               + 500 atrapanieblas instalados desde 2017<br>
+               + Cada uno recolecta entre 200 y 300 litros de agua al día<br>
+               + Más de 20 comunidades beneficiadas en zonas rurales de Perú<br>
+              
             </span>
           </div>
         </div>
         <!-- Mosqoy -->
         <div style="display: flex; align-items: flex-start; gap: 1.5rem;">
-          <img src="img/mosqoy-logo.png" alt="Mosqoy" style="width:90px; height:auto; border-radius:0.7rem; box-shadow:0 2px 8px rgba(30,144,255,0.10);" />
+          <img src="img/mosqoy.jpg" alt="Mosqoy" style="width:250px; height:auto; border-radius:0.7rem; box-shadow:0 2px 8px rgba(30,144,255,0.10);" />
           <div>
             <strong>Mosqoy</strong><br>
             <span>
               <!-- Español -->
-              ONG que apoya la educación y el desarrollo sostenible de comunidades indígenas en los Andes.<br>
+              Ofrece becas educativas a jóvenes de comunidades indígenas andinas, 
+              para que puedan estudiar sin dejar atrás su cultura. Acompañamos todo el camino: desde los estudios hasta el 
+              desarrollo personal, siempre con respeto por sus raíces. Nos inspira su enfoque donde mezclan tradición con oportunidad, 
+              y creen igual que nosotros que <strong> la educación puede cambiarlo todo.</strong> <br><br>
+              <strong> Impacto </strong> <br>
+              + Apoyamos al 100% la educación superior en Ing. Ambiental de Jovenes Adultos
             </span>
           </div>
         </div>
         <!-- Misión Huascarán -->
         <div style="display: flex; align-items: flex-start; gap: 1.5rem;">
-          <img src="img/mision-huascaran-logo.png" alt="Misión Huascarán" style="width:90px; height:auto; border-radius:0.7rem; box-shadow:0 2px 8px rgba(30,144,255,0.10);" />
+          <img src="img/mision-huascaran.jpg" alt="Misión Huascarán" style="width:250px; height:auto; border-radius:0.7rem; box-shadow:0 2px 8px rgba(30,144,255,0.10);" />
           <div>
             <strong>Misión Huascarán</strong><br>
             <span>
               <!-- Español -->
-              Fundación enfocada en mejorar la calidad de vida y educación en zonas rurales de la sierra peruana.<br>
+              Trabaja en zonas rurales de los Andes, llevando educación, salud y desarrollo económico a comunidades que viven en condiciones extremas de pobreza.
+              Su enfoque es integral. Creen que el cambio empieza desde adentro, empoderando a las familias con 
+              herramientas para salir adelante.<br><br>
+              <strong> Impacto </strong> <br>
+              + Donamos filtros de agua y +500 termos para brindar acceso al agua
+            
             </span>
           </div>
         </div>
@@ -169,7 +216,9 @@
     <div style="flex: 1 1 380px; min-width: 270px; max-width: 540px; display: flex; flex-direction: column; gap: 2rem;">
       <h2 style="margin-bottom: 0.5rem;">Nosotros</h2>
       <p style="font-size: 1.15rem; color: #222; margin-bottom: 1.5rem;">
-        Somos un equipo apasionado por la sostenibilidad y la innovación, comprometidos con un futuro más verde.
+        Somos una marca que nació para cambiar hábitos. Creemos que el diseño puede ser una 
+        herramienta de impacto, y que los <strong> pequeños cambios</strong>  generan </strong> alto impacto </strong> cuando se hacen todos los días. <br> 
+
       </p>
       <div style="display: flex; flex-direction: column; gap: 1.2rem;">
         <!-- Misión -->
@@ -178,7 +227,7 @@
             Misión
           </span>
           <span style="font-size: 1.05rem; color: #222;">
-            Ayudar a empresas y personas a reducir su huella de carbono.
+            Inspirar a más personas a adoptar un estilo de vida sostenible con productos prácticos, elegantes y propósito.
           </span>
         </div>
         <!-- Visión -->
@@ -187,7 +236,7 @@
             Visión
           </span>
           <span style="font-size: 1.05rem; color: #222;">
-            Un mundo sin residuos plásticos.
+            Un mundo donde lo reusable sea la norma, no la excepción.
           </span>
         </div>
         <!-- Valores -->
@@ -196,31 +245,31 @@
             Valores
           </span>
           <span style="font-size: 1.05rem; color: #222;">
-            Sostenibilidad, innovación, transparencia.
+            Sostenibilidad real, Innovación con sentido y transparencia sin filtros
           </span>
         </div>
       </div>
     </div>
     <!-- Right: Image -->
     <div style="flex: 1 1 260px; min-width: 220px; max-width: 400px; display: flex; align-items: center; justify-content: center;">
-      <img src="img/nosotros-equipo.jpg" alt="Equipo Fluye" style="width: 100%; max-width: 340px; border-radius: 1.2rem; box-shadow: 0 2px 16px rgba(30,144,255,0.10); object-fit: cover;" />
+      <img src="img/fluye-team.jpg" alt="Equipo Fluye" style="width: 150%; max-width: 450px; border-radius: 1.2rem; box-shadow: 0 2px 16px rgba(30,144,255,0.10); object-fit: cover;" />
     </div>
   </section>
 
   <!-- Features Section: now a big centrally placed image, like a hero banner but smaller -->
-  <section id="features" style="display: flex; justify-content: center; align-items: center; padding: 2.5rem 0; background: #fff; border-radius: 1.2rem; box-shadow: 0 2px 16px rgba(30,144,255,0.04); max-width: 1100px; margin: 2rem auto;">
+  <!-- <section id="features" style="display: flex; justify-content: center; align-items: center; padding: 2.5rem 0; background: #fff; border-radius: 1.2rem; box-shadow: 0 2px 16px rgba(30,144,255,0.04); max-width: 1100px; margin: 2rem auto;">
     <img 
-      src="img/features-banner.jpg" 
+      src="img/caracteristicas.jpg" 
       alt="Características / Features" 
-      style="width: 100%; max-width: 700px; border-radius: 1.2rem; box-shadow: 0 2px 16px rgba(30,144,255,0.10); object-fit: cover; display: block;"
+      style="width: 120%; max-width: 1600px; border-radius: 1.2rem; box-shadow: 0 2px 16px rgba(30,144,255,0.10); object-fit: cover; display: block;"
     />
-  </section>
+  </section>*/  -->
 
   <!-- CTA Section as a Form -->
   <section id="cta" style="padding: 2.5rem 0; background: linear-gradient(90deg, rgba(30,144,255,0.92) 60%, rgba(109,213,237,0.92) 100%); border-radius: 1.2rem; box-shadow: 0 2px 16px rgba(30,144,255,0.10); max-width: 700px; margin: 2.5rem auto;">
     <h2 style="color: #fff; margin-bottom: 1.2rem; text-align: center;">
       Listo para tener la tuya<br>
-      <span style="font-size: 1.1rem; font-weight: 400; color: #e0f7ef;">Ready to get yours?</span>
+      <span style="font-size: 1.1rem; font-weight: 400; color: #e0f7ef;">Unete a nuestros branded partners</span>
     </h2>
     <!-- 
       ESPAÑOL:
@@ -229,18 +278,18 @@
     -->
     <form id="cta-form" style="display: flex; flex-direction: column; gap: 1.2rem; max-width: 420px; margin: 0 auto;">
       <label style="color: #fff; font-weight: 500;">
-        Nombre / Name
+        Nombre
         <input type="text" name="nombre" required placeholder="Tu nombre" style="width: 100%; padding: 0.7rem 1rem; border-radius: 0.7rem; border: none; margin-top: 0.3rem; font-size: 1rem;">
       </label>
       <label style="color: #fff; font-weight: 500;">
-        Correo electrónico / Email
+        Email
         <input type="email" name="email" required placeholder="Tu email" style="width: 100%; padding: 0.7rem 1rem; border-radius: 0.7rem; border: none; margin-top: 0.3rem; font-size: 1rem;">
       </label>
       <label style="color: #fff; font-weight: 500;">
-        ¿Cuántas botellas te interesan? / How many bottles are you interested in?
+        ¿Cuántas botellas te interesan?
         <input type="number" name="cantidad" min="1" max="100" required placeholder="Ej: 1" style="width: 100%; padding: 0.7rem 1rem; border-radius: 0.7rem; border: none; margin-top: 0.3rem; font-size: 1rem;">
       </label>
-      <button type="submit" style="background: #16a34a; color: #fff; font-weight: 600; font-size: 1.1rem; border: none; border-radius: 1.2rem; padding: 0.9rem 0; margin-top: 0.5rem; cursor: pointer; box-shadow: 0 1px 6px rgba(30,144,255,0.10); transition: background 0.18s;">
+      <button type="submit" style="background: #050556; color: #fff; font-weight: 600; font-size: 1.1rem; border: none; border-radius: 1.2rem; padding: 0.9rem 0; margin-top: 0.5rem; cursor: pointer; box-shadow: 0 1px 6px rgba(30,144,255,0.10); transition: background 0.18s;">
         Unete a Branded Partners
       </button>
       <span id="cta-form-message" style="color: #fff; font-weight: 500; text-align: center; margin-top: 0.5rem; display: none;"></span>
@@ -306,7 +355,7 @@
           });
       });
     </script>
-      });
+      
     </script>
   </section>
 
